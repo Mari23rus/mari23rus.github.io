@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FCC: Survey Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <form id="survey-form" action="#" method="post">
+    <p id="description">Book suggestion quiz</p>
+    <div class="form-row">
+      <div class="column1"><label for="name" id="name-label">Name:</label></div>
+      <div class="column2"><input type="text" id="name" name="name" placeholder="Enter your name" required></div>
+    </div>
+    <div class="form-row">
+      <div class="column1"><label for="email" id="email-label">Email:</label></div>
+      <div class="column2"><input type="email" id="email" name="email" placeholder="Enter your email" required></div>
+    </div>
+    <div class="form-row">
+      <div class="column1"><label for="number" id="number-label">Age:</label></div>
+      <div class="column2"><input type="number" id="number" name="age" min="3" max="120" placeholder="Enter your age" required></div>
+    </div>
+    <div class="form-row">
+      <div class="column1"><label>Gender:</label></div>
+      <div class="column2">
+        <label class="radio"><input type="radio" name="gender" value="male">Male</label>
+        <label class="radio"><input type="radio" name="gender" value="female">Female</label>
+        <label class="radio"><input type="radio" name="gender" value="other">Other</label>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="column1"><label>Which option best describes your current role?</label></div>
+      <div class="column2">
+        <select name="role" id="dropdown">
+          <option value="" disabled selected>Select an option</option>
+          <option value="student">Student</option>
+          <option value="full-time">Employed full time</option>
+          <option value="self-employed">Self-employed</option>
+          <option value="homemaker">Homemaker</option>
+          <option value="retired">Retired</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="column1"><label>What genre do you like to read the most?<br>Check all choices that apply to you</label></div>
+        <div class="column2">
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="business">Business</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="comics">Comics</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="contemporary">Contemporary</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="cookbooks">Cookbooks</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="fiction">Fiction</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="horror">Horror</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="humor">Humor and Comedy</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="nonfiction">Nonfiction</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="poetry">Poetry</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="romance">Romance</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="science">Science Fiction</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="sports">Sports</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="thriller">Thriller</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="travel">Travel</label></div>
+          <div class="checkbox"><label><input type="checkbox" name="genre" value="young">Young Adult</label></div>
+        </div>
+    </div>
+    <div class="form-row">
+      <div class="column1"><label for="textarea">Is there anything else you could add?</label></div>
+      <div class="column2"><textarea name="text" id="textarea" rows="5" placeholder="Write your comment here"></textarea></div>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
