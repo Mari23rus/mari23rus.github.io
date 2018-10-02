@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FCC: Product Landing Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header id="header">
+    <a id="logo" href="http://mari23rus.github.io/freecodecamp/landing/">
+      <img id="header-img" src="moon-logo.svg" alt="logo">
+      <span id="name">MoonShine</span>
+    </a>
+    <nav id="nav-bar">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#tour" class="nav-link">Tour</a>
+      <a href="#price" class="nav-link">Price</a>
+    </nav>
+  </header>
+  <main>
+    <h1>MOON IS CALLING!</h1>
+    <div>UNIQUE EXPERIENCES AND LANDSCAPES THAT YOU HAVE NEVER SEEN BEFORE</div>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <label id="label" for="email">ADVENTURE STARTS HERE</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+      <button type="submit" id="submit">Get started</button>
+    </form>
+    <a id="features"></a>
+    <div id="feature">
+      <div id="feature-icon"><img src="./icons/rocket.svg" alt="rocket icon" height="60px"></div>
+      <div id="feature-text"><h2>Quick transfer</h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat euismod blandit. Morbi imperdiet nulla diam, vitae euismod ipsum tristique vel.</div>
+    </div>
+    <div id="feature">
+      <div id="feature-icon"><img src="./icons/view.svg" alt="telescope icon" height="60px"></div>
+      <div id="feature-text"><h2>Great view</h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat euismod blandit. Morbi imperdiet nulla diam, vitae euismod ipsum tristique vel.</div>
+    </div>
+    <div id="feature">
+      <div id="feature-icon"><img src="./icons/cocktail.svg" alt="cocktail icon" height="60px"></div>
+      <div id="feature-text"><h2>All inclusive</h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet nulla diam, vitae euismod ipsum tristique vel.</div>
+    </div>
+    <a id="tour"></a>
+    <div id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/2iSZMv64wuU?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+    <a id="price"></a>
+    <h2>TODAY'S TOP DEALS</h2>
+    <div id="prices">
+      <div id="price1"><h3>LAST MINUTE DEAL</h3><span class="number">1,200</span>&nbsp;<span class="symbol">₿</span><br> Book now for travel <br> in the next <br> 2&nbsp;weeks <br>
+        <button type="submit" class="book">BOOK NOW</button>
+      </div>
+      <div id="price2"><h3>FAMILY</h3><span class="number">3,600</span>&nbsp;<span class="symbol">₿</span><br> 50% Off 2nd Guest <br> + Up to 300&nbsp;₿ <br> to spend onboard <br>
+        <button type="submit" class="book">BOOK NOW</button>
+      </div>
+      <div id="price3"><h3>PREMIUM</h3><span class="number">7,400</span>&nbsp;<span class="symbol">₿</span><br> Personalized service <br> Gourmet dining <br> Internet Package <br>
+        <button type="submit" class="book">BOOK NOW</button>
+      </div>
+    </div>
+  </main>
+  <footer>&copy; 2018 MoonShine Travel Agentcy</footer>
+</body>
+</html>
