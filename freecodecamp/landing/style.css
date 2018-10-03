@@ -16,7 +16,7 @@ body {
 
 #header {
     width: 100%;
-    padding: 10px 40px;
+    padding: 10px;
     position: fixed;
     top: 0;
     display: flex;
@@ -28,7 +28,7 @@ body {
 #header-img {
     margin-right: 10px;
     width: auto;
-    height: 60px;
+    height: 40px;
 }
 
 #logo {
@@ -38,21 +38,21 @@ body {
 }
 
 #name {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     /* color: #FFDB4D; */
     color: #ffc300;
 }
 
 #nav-bar {
-    width: 460px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
 
 .nav-link {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #455863;
 }
 
@@ -63,19 +63,19 @@ body {
 :target {
     display: block;
     position: relative;
-    top: -90px; 
+    top: -80px; 
     visibility: hidden;
   }
 
 main {
-    margin: 80px auto 0;
-    width: 66%;
+    margin: 80px 16px 0;
+    width: 100%;
     text-align: center;
 }
 
 h1 {
     margin: 0;
-    padding: 16px;
+    padding: 14px;
 }
 
 h2, h3 {
@@ -83,11 +83,13 @@ h2, h3 {
 }
 
 #video {
-    margin: 100px auto 60px;
+    width: 90%;
+    height: calc(90vw / 1.78);
+    margin: 60px auto;
 }
 
 #form {
-    width: 500px;
+    width: 300px;
     margin: 60px auto;
     padding: 20px;
     /* display: inline-block; */
@@ -119,30 +121,30 @@ h2, h3 {
     border-radius: 4px;
 }
 
-#feature {
+.feature {
     display: flex;
     margin-bottom: 30px;
 }
 
-#feature-icon {
+.feature-icon {
     width: 20%;
     text-align: right;
 }
 
-#feature-text {
+.feature-text {
     width: 80%;
-    padding-left: 50px;
+    padding-left: 20px;
     text-align: left;
 }
 
 #prices {
-    display: flex;
-    margin-bottom: 40px;
-    justify-content: space-around;
+    width: 100%;
+    margin: 20px auto;
+    
 }
 
 #price1, #price2, #price3 {
-    width: 30%;
+    width: 80%;
     margin: 30px 20px;
     padding: 20px;
     background-color: #F4F6F6;
@@ -174,4 +176,59 @@ footer {
     width: 70%;
     margin: 0 auto 30px;
     text-align: right;
+}
+
+@media (min-width: 768px) {
+    #nav-bar {
+        width: 460px;
+    }
+
+    #header-img {
+        height: 60px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 10px 40px;
+    }
+
+    #name {
+        font-size: 20px;
+    }
+
+    main {
+        margin: 80px auto 0;
+        width: 66%;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    #form {
+        width: 500px;
+    }
+
+    #video {
+        width: 560px;
+        height: 315px;
+        margin: 100px auto 60px;
+    }
+
+    .feature-text {
+        padding-left: 50px;
+    }
+
+    #prices {
+        display: flex;
+        margin-bottom: 40px;
+        justify-content: space-around;
+    }
+
+    #price1, #price2, #price3 {
+        width: 30%;
+    }
 }
