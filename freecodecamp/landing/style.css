@@ -26,7 +26,7 @@ body {
 }
 
 #header-img {
-    margin-right: 10px;
+    padding-right: 10px;
     width: auto;
     height: 40px;
 }
@@ -63,13 +63,14 @@ body {
 :target {
     display: block;
     position: relative;
-    top: -80px; 
+    top: -90px; 
     visibility: hidden;
   }
 
 main {
-    margin: 80px 16px 0;
+    margin-top: 80px;
     width: 100%;
+    padding: 0 16px;
     text-align: center;
 }
 
@@ -123,7 +124,7 @@ h2, h3 {
 
 .feature {
     display: flex;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .feature-icon {
@@ -145,7 +146,7 @@ h2, h3 {
 
 #price1, #price2, #price3 {
     width: 80%;
-    margin: 30px 20px;
+    margin: 30px auto;
     padding: 20px;
     background-color: #F4F6F6;
     border-radius: 4px;
@@ -181,10 +182,12 @@ footer {
 @media (min-width: 768px) {
     #nav-bar {
         width: 460px;
+        padding-right: 40px;
     }
 
     #header-img {
         height: 60px;
+        padding-left: 40px;
     }
 
     .nav-link {
@@ -202,20 +205,23 @@ footer {
     main {
         margin: 80px auto 0;
         width: 66%;
+        padding: 0;
     }
 
     h1 {
-        font-size: 16px;
+        padding-top: 40px;
+        font-size: 32px;
     }
 
     #form {
         width: 500px;
+        margin: 80px auto;
     }
 
     #video {
         width: 560px;
         height: 315px;
-        margin: 100px auto 60px;
+        margin: 80px auto 100px;
     }
 
     .feature-text {
