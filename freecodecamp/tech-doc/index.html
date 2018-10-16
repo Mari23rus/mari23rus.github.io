@@ -5,11 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FCC: Technical Documentation</title>
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <nav id="navbar">
+    <header><h1>JS Documentation</h1></header>
+    <ul id="menu">
+      <li class="nav-element"><a class="nav-link" href="#hello">Hello World</a></li>
+      <li class="nav-element"><a class="nav-link" href="#var">Variables</a></li>
+      <li class="nav-element"><a class="nav-link" href="#operators">Operators</a></li>
+      <li class="nav-element"><a class="nav-link" href="#conditionals">Conditionals</a></li>
+      <li class="nav-element"><a class="nav-link" href="#functions">Functions</a></li>
+      <li class="nav-element"><a class="nav-link" href="#reference">Reference</a></li>
+    </ul>
+  </nav>
   <main id="main-doc">
-
+    <section class="main-section"  id="hello">
+      <header><h2>Hello World</h2></header>
+      <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that, when applied to an HTML document, can provide dynamic interactivity on websites.</p>
+      <p>However, becoming comfortable with JavaScript is a little harder than becoming comfortable with HTML and CSS. You may have to start small and keep working in small consistent steps. To start, we'll show how to add some basic JavaScript to your page, creating a "hello world!" example:</p>
+      <pre><code>alert("Hello, World!");</code></pre>
+    </section>
+    <section class="main-section" id="var">
+      <header><h2>Variables</h2></header>
+      <p>Variables are containers that you can store values in. You start by declaring a variable with the var keyword, followed by any name you want to call it:</p>
+      <pre><code>var myVariable;</code></pre>
+      <p>Note that variables may hold values that have different data types:</p>
+      <ul>
+        <li><strong>String</strong>:	A sequence of text known as a string. To signify that the value is a string, you must enclose it in quote marks.</li>
+        <li><strong>Number</strong>:	A number. Numbers don't have quotes around them.</li>
+        <li><strong>Boolean</strong>:	A True/False value. The words true and false are special keywords in JS, and don't need quotes.</li>
+        <li><strong>Array</strong>:	A structure that allows you to store multiple values in one single reference.</li>
+        <li><strong>Object</strong>:	Basically, anything. Everything in JavaScript is an object, and can be stored in a variable. Keep this in mind as you learn.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="operators">
+      <header><h2>Operators</h2></header>
+      <p>An operator is a mathematical symbol which produces a result based on two values (or variables). In the following you can see some of the simplest operators, along with some examples to try out in the JavaScript console.</p>
+      <p><strong>Addition</strong>:	Used to add two numbers together or glue two strings together.</p>
+      <pre><code>6 + 9;
+"Hello " + "world!";</code></pre>
+      <p><strong>Subtraction, Multiplication, Division</strong>: These do what you'd expect them to do in basic math.</p>
+      <pre><code>9 - 3;
+8 * 2; // multiply in JS is an asterisk
+9 / 3;</code></pre>
+      <p><strong>Assignment</strong>: It assigns a value to a variable.</p>
+      <pre><code>var myVariable = 'Bob';</code></pre>
+      <p><strong>Equality</strong>: Does a test to see if two values are equal to one another and returns a true/false (Boolean) result.</p>
+      <pre><code>var myVariable = 3;
+myVariable === 4;</code></pre>
+      <p><strong>Not, Does-not-equal</strong>: Returns the logically opposite value of what it precedes; it turns a true into a false, etc. When it is used alongside the Equality operator, the negation operator tests whether two values are not equal.</p>
+      <p>The basic expression is true, but the comparison returns false because we've negated it:</p>
+      <pre><code>var myVariable = 3;
+!(myVariable === 3);</code></pre>
+      <p>Here we are testing "is myVariable NOT equal to 3". This returns false because myVariable IS equal to 3.</p>
+      <pre><code>var myVariable = 3;
+myVariable !== 3;</code></pre>
+    </section>
+    <section class="main-section" id="conditionals">
+      <header><h2>Conditionals</h2></header>
+      <p>Conditionals are code structures which allow you to test if an expression returns true or not, running alternative code revealed by its result. A very common form of conditionals is the if ... else statement. For example:</p>
+      <pre><code>var iceCream = 'chocolate';
+if (iceCream === 'chocolate') {
+  alert('Yay, I love chocolate ice cream!');    
+} else {
+  alert('Awwww, but chocolate is my favorite...');
+}</code></pre>
+    <p>The expression inside the if ( ... ) is the test — this uses the identity operator (as described above) to compare the variable iceCream with the string chocolate to see if the two are equal. If this comparison returns true, the first block of code is run. If the comparison is not true, the first block is skipped and the second code block, after the else statement, is run instead.</p>
+    </section>
+    <section class="main-section" id="functions">
+      <header><h2>Functions</h2></header>
+      <p>Functions are a way of packaging functionality that you wish to reuse. When you need the procedure you can call a function, with the function name, instead of rewriting the entire code each time. You have already seen some uses of functions above, for example:</p>
+      <pre><code>alert('hello!');</code></pre>
+      <p>This function alert is built into the browser for you to use whenever you desire.</p>
+      <p>If you see something which looks like a variable name, but has parentheses — () — after it, it is likely a function. Functions often take arguments — bits of data they need to do their job. These go inside the parentheses, separated by commas if there is more than one argument.</p>
+      <p>For example, the alert() function makes a pop-up box appear inside the browser window, but we need to give it a string as an argument to tell the function what to write in the pop-up box.</p>
+      <p>The good news is you can define your own functions — in this next example we write a simple function which takes two numbers as arguments and multiplies them:</p>
+      <pre><code>function multiply(num1,num2) {
+  var result = num1 * num2;
+  return result;
+}</code></pre>
+      <p>Try running the above function in the console, then test with several arguments. For example:</p>
+      <pre><code>multiply(4, 7);
+multiply(20, 20);
+multiply(0.5, 3);</code></pre>
+    </section>
+    <section class="main-section" id="reference">
+      <header><h2>Reference</h2></header>
+      <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/" target="_blank">MDN</a></p>
+    </section>
   </main>
 </body>
 </html>
