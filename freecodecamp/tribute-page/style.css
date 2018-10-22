@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-color: #E8F8F5;
+	background-color: /*#E8F8F5*/ #EAECEE;
 }
 #main {
 	max-width: 1000px;
