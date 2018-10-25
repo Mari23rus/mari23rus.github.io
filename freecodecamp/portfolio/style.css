@@ -61,8 +61,6 @@ p {
 
 #avatar {
     background-image: url("ava.jpeg");
-
-    /* make a square container */
     width: 100px;
     height: 100px;
 
