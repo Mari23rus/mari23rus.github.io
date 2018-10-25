@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: /*#465A64*/ #333333;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+#navbar {
+    width: 90%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    padding: 30px 66px 0 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    /*background-color: #fbfbdd  #EAECEE*/;
+    color: white;
+}
+
+#avatar {
+    background-image: url("ava.jpeg");
+
+    /* make a square container */
+    width: 100px;
+    height: 100px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+}
+
+#projects {
+    padding: 80px 40px;
+    background-color: white;
+}
+
+#projects-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.project-tile {
+    margin: 60px 30px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px 0 rgba(42,51,83,.12), 0 5px 15px rgba(0,0,0,.06);
+    text-align: center;
+}
+
+.project-icon {
+    margin: 12px 12px 0;
+}
+
+.project-title {
+    padding: 10px 16px;
+    font-size: 16px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #333333;
+}
+
+.tech {
+    padding-bottom: 12px;
+    font-size: 14px;
+    color: #465A64;
+    font-style: italic;
+}
+
+#profile-link {
+    text-decoration: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #EAECEE;
+    margin: 1em 8px;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+    padding: 16px 40px;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    #welcome-section {
+        background-image: url("img.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+}
