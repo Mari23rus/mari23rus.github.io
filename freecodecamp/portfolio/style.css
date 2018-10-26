@@ -30,14 +30,14 @@ p {
 }
 
 #navbar {
-    width: 90%;
+    width: 100%;
     position: fixed;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .nav-item {
-    padding: 30px 66px 0 0;
+    padding: 30px 16px 0;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
@@ -54,6 +54,10 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url("img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     
     /*background-color: #fbfbdd  #EAECEE*/;
     color: white;
@@ -134,11 +138,12 @@ footer {
 
 @media (min-width: 768px) {
 
-    #welcome-section {
-        background-image: url("img.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+    #navbar {
+        width: 90%;
+        justify-content: flex-end;
     }
     
+    .nav-item {
+        padding: 30px 66px 0 0;
+    }    
 }
