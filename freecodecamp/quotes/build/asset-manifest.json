@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.959d6ca2.chunk.css",
-  "main.js": "/static/js/main.ea2cc257.chunk.js",
-  "main.js.map": "/static/js/main.ea2cc257.chunk.js.map",
-  "static/js/1.61b63230.chunk.js": "/static/js/1.61b63230.chunk.js",
-  "static/js/1.61b63230.chunk.js.map": "/static/js/1.61b63230.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/twitter-color.svg": "/static/media/twitter-color.79aee4eb.svg",
-  "static/css/main.959d6ca2.chunk.css.map": "/static/css/main.959d6ca2.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.ed9646962dbb186d7dbe3add4f901d46.js": "/precache-manifest.ed9646962dbb186d7dbe3add4f901d46.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/freecodecamp/quotes/build/static/css/main.959d6ca2.chunk.css",
+  "main.js": "/freecodecamp/quotes/build/static/js/main.06261b68.chunk.js",
+  "main.js.map": "/freecodecamp/quotes/build/static/js/main.06261b68.chunk.js.map",
+  "static/js/1.61b63230.chunk.js": "/freecodecamp/quotes/build/static/js/1.61b63230.chunk.js",
+  "static/js/1.61b63230.chunk.js.map": "/freecodecamp/quotes/build/static/js/1.61b63230.chunk.js.map",
+  "runtime~main.js": "/freecodecamp/quotes/build/static/js/runtime~main.f4119756.js",
+  "runtime~main.js.map": "/freecodecamp/quotes/build/static/js/runtime~main.f4119756.js.map",
+  "static/media/twitter-color.svg": "/freecodecamp/quotes/build/static/media/twitter-color.79aee4eb.svg",
+  "static/css/main.959d6ca2.chunk.css.map": "/freecodecamp/quotes/build/static/css/main.959d6ca2.chunk.css.map",
+  "index.html": "/freecodecamp/quotes/build/index.html",
+  "precache-manifest.f2a85b3bc501550640dac90ebceebb31.js": "/freecodecamp/quotes/build/precache-manifest.f2a85b3bc501550640dac90ebceebb31.js",
+  "service-worker.js": "/freecodecamp/quotes/build/service-worker.js"
 }
