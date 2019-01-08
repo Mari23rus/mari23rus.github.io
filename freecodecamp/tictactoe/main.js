@@ -1,37 +1,44 @@
 let sign = 'x';
+let gameOngoing = true;
 
 let pick = function(event){
+    if (!gameOngoing) return;
     let cell = event.target;
     if (cell.innerText !== '') {
         return;
     }
     cell.innerText = sign;
-    sign = sign == 'x' ? 'o' : 'x';
+    //sign = sign == 'x' ? 'o' : 'x';
     checkWin();
-    block();
+    setTimeout(function(){
+        bot();
+        checkWin();
+        //block();
+    }, 500);
+    
 }
 
 let reset = function() {
     cells.forEach(function(cell) {
         cell.innerText = '';
         cell.classList.remove("win");
-        cell.style.pointerEvents = 'auto';
+        gameOngoing = true;
+        //cell.style.pointerEvents = 'auto';
     })
 }
 
 let cells = Array.from(document.querySelectorAll(".cell"));
 
-let rows = [];
-let chunk = 3;
-for (let i = 0; i < cells.length; i+=3) {
-    rows.push(cells.slice(i, chunk));
-    chunk += 3;
-}
-
+// let rows = [];
+// let chunk = 3;
+// for (let i = 0; i < cells.length; i+=3) {
+//     rows.push(cells.slice(i, chunk));
+//     chunk += 3;
+// }
 // let columns = [];
-// for (let i = 0; i < rows.length; i++) {
+// for (let i = 0; i < rows.length; i++) {}
 
-let allCells = [[cells[0], cells[1], cells[2]], [cells[3], cells[4],cells[5]], [cells[6], cells[7], cells[8]],
+let combinations = [[cells[0], cells[1], cells[2]], [cells[3], cells[4],cells[5]], [cells[6], cells[7], cells[8]],
                 [cells[0], cells[3], cells[6]], [cells[1], cells[4],cells[7]], [cells[2], cells[5], cells[8]],
                 [cells[0], cells[4], cells[8]], [cells[2], cells[4], cells[6]]];
 
@@ -48,10 +55,24 @@ let block = function() {
 
 
 let checkWin = function() {    
-   allCells.forEach(function(comb){  
-        if (comb.every(item => item.innerText == 'x') || comb.every(item => item.innerText == 'o')) comb.forEach(item => item.classList.add("win"));
+   combinations.forEach(function(comb){  
+        if (comb.every(item => item.innerText == 'x') || comb.every(item => item.innerText == 'o')) {
+            comb.forEach(item => item.classList.add("win"));
+            gameOngoing = false;
+        }
+        
     })
-    // setTimeout(function(){
-    //     alert("You Won");
-    // },1000);
+}
+
+let bot = function() {
+    
+    if (!gameOngoing) return;
+
+    for (let i = 0; i < cells.length; i++) {
+        if (cells[i].innerText == '') {
+            cells[i].innerText = 'o';
+            sign = 'x';
+            return;
+        }
+    }
 }
