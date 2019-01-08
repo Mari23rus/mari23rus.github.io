@@ -15,7 +15,7 @@ body {
 
 h1 {
     font-family: 'Press Start 2P', cursive;
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
     margin: 40px 0 48px;
     /* color: #BB8FCE; */
@@ -24,19 +24,21 @@ h1 {
 .container {
     display: grid;
     justify-content: center;
-    width: 80%;
+    width: 92%;
     margin: 20px auto 20px;
-    padding: 40px;
+    padding: 20px;
     background-color: #fff;
     font-size: 40px;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px;
     border-radius: 10px;
 	box-shadow: 0 15px 35px 0 rgba(42,51,83,.12), 0 5px 15px rgba(0,0,0,.06);
 }
 
 .cell {
-    padding: 22px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #one, #two, #four, #five, #seven, #eight {
@@ -47,13 +49,9 @@ h1 {
     border-bottom: 1px solid #525B76;
 }
 
-.btn-box {
-    display: flex;
-    justify-content: center;
-}
-
 .btn {
-    margin-top: 40px;
+    display: block;
+    margin: 32px auto 20px;
     width: 100px;
     padding: 8px 16px;
     font-size: 20px;
@@ -69,6 +67,16 @@ h1 {
     background-color: #BB8FCE;
 }
 
+@media (min-width: 425px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        width: 72%;
+    }
+}
+
 @media (min-width: 768px) {
     h1 {
         font-size: 40px;
@@ -78,5 +86,12 @@ h1 {
     .container {
         width: 600px;
         margin: 20px auto 40px;
+        padding: 40px;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+    }
+
+    .btn {
+        margin: 40px auto;
     }
 }
