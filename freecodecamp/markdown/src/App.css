@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #282c34;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 30px auto 40px;
+}
+
+#column1 {
+  width: 40%;
+}
+
+#editor {
+  width: 96%;
+  resize: none;
+  height: 70vh;
+  padding: 8px;
+}
+
+#column2 {
+  width: 60%;
+}
+
+#preview {
+  background-color: white;
+  height: 70vh;
+  padding: 8px;
+  overflow-y:auto;
+  overflow-wrap: break-word;
+}
+
+#preview h1, 
+#preview h2 {
+  color: black;
+  text-align: left;
+}
+
+code {
+  background-color: #e6e8ea;
+}
+
+pre {
+  padding: 8px;
+  background-color: #e6e8ea;
+}
