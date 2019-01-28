@@ -1,0 +1,48 @@
+html {
+  background: url(drums.jpg);
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 26px;
+}
+
+#drum-machine {
+  margin: 160px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  width: 400px;
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #ffc600;
+}
+
+.drum-pad {
+  width: 90px;
+  height: 90px;
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.75px solid #000;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
+  text-transform: uppercase;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
