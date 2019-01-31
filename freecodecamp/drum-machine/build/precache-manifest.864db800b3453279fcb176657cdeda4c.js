@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "19f1d90775da6c45b8bc",
+    "revision": "b9635d649bf7202f0cb7",
     "url": "/freecodecamp/drum-machine/build/static/css/main.9c839936.chunk.css"
   },
   {
-    "revision": "19f1d90775da6c45b8bc",
-    "url": "/freecodecamp/drum-machine/build/static/js/main.19f1d907.chunk.js"
+    "revision": "b9635d649bf7202f0cb7",
+    "url": "/freecodecamp/drum-machine/build/static/js/main.b9635d64.chunk.js"
   },
   {
     "revision": "fbfa9ac1c04d6f818c50",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/freecodecamp/drum-machine/build/static/media/drums.9862c211.jpg"
   },
   {
-    "revision": "42fa6ee1bd824e083c54d5e897440cfd",
+    "revision": "b21fd92cd1c3c8de961006e8d7fdf6f3",
     "url": "/freecodecamp/drum-machine/build/index.html"
   }
 ];

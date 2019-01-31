@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/freecodecamp/drum-machine/build/precache-manifest.2ed3f14e352fba982a3e9a7103deddab.js"
+  "/freecodecamp/drum-machine/build/precache-manifest.864db800b3453279fcb176657cdeda4c.js"
 );
 
 workbox.clientsClaim();
